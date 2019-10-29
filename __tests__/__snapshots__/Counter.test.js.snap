@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Counter component should render correctyl 1`] = `
+"<div className=\\"counter\\">
+  <h2>
+    Você tem 
+    15
+     counters
+  </h2>
+</div>"
+`;
+
+exports[`Testing Counter component should render correctyl 2`] = `
+"<div className=\\"counter\\">
+  <h2>
+    Você tem 
+    30
+     counters
+  </h2>
+</div>"
+`;

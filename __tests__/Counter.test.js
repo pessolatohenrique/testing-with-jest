@@ -1,13 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../src/App';
+import Counter from '../src/Counter';
 
-describe('Testing app component', () => {
+describe('Testing Counter component', () => {
     it('should render correctyl', () => {
         const wrapper = shallow(
-            <App />
+            <Counter count={5} />
         );
 
+        expect(wrapper.debug()).toMatchSnapshot();
+        wrapper.setProps({ count: 10 });
         expect(wrapper.debug()).toMatchSnapshot();
     })
 });
